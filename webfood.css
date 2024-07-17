@@ -24,6 +24,20 @@ a{
     text-transform: uppercase;
 }  
 
+.menu-btn{
+width: 3rem;
+height: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.menu-btn span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
 #main-header ul{
     list-style: none;
     display: flex;
@@ -92,7 +106,11 @@ main h1{
     background-color: rgb(221, 134, 34);
 }  
 
-@media (max-width: 768px){
+@media (max-width: 48rem){
+    #main-header nav{
+        display: none;
+    } 
+   
     main h1{
         font-size: 1.5rem;
     }
